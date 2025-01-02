@@ -2,6 +2,9 @@
 set -x  
 cp ./.gitconfig ~
 
+
+sudo apt-get install bat -y    
+
 # powerline fonts for zsh agnoster theme
 git clone https://github.com/powerline/fonts.git
 cd fonts
