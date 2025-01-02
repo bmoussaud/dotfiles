@@ -1,0 +1,21 @@
+[user]
+	email = benoit@moussaud.org
+	name =  Benoit Moussaud
+
+[github]
+    user = bmoussaud
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    ui = true
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status -s
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset --%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+    latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
+    lgdiff = log -p --cc --graph
