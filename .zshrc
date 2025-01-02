@@ -128,8 +128,6 @@ function kubectlgetall {
   done
 }
 
-# starship
-eval "$(starship init zsh)"
 
 alias cat='batcat --style header --style snip --style changes --style header'
 alias ldk8sctx="source /Users/bmoussaud/Workspace/bmoussaud/tanzutips/context/load-k8s-config.sh"
@@ -171,7 +169,9 @@ function stop-aks-cluster() {
 eval "$(task --completion zsh)"
 eval "$(kubectl completion zsh)"
 alias k='kubectl'
-
+DEFAULT_USER=$USER
 # remove username@hostname in prompt as advised at
 # https://github.com/ohmyzsh/ohmyzsh/issues/5581#issuecomment-256825141
 prompt_context() {}
+
+
