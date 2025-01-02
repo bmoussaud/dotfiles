@@ -169,6 +169,8 @@ function stop-aks-cluster() {
 
 
 eval "$(task --completion zsh)"
+eval "$(kubectl completion zsh)"
+alias k='kubectl'
 
 # remove username@hostname in prompt as advised at
 # https://github.com/ohmyzsh/ohmyzsh/issues/5581#issuecomment-256825141
