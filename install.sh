@@ -4,7 +4,7 @@ cp ./.gitconfig ~
 
 sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin/
 
-sudo apt-get install bat -y    
+sudo apt-get update -y && sudo apt-get install bat -y    
 
 # powerline fonts for zsh agnoster theme
 git clone https://github.com/powerline/fonts.git
