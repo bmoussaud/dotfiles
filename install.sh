@@ -12,8 +12,8 @@ cd fonts
 cd .. && rm -rf fonts
 
 
-zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
-zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
+#zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
+#zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
 cp ./.zshrc ~
 
 ########################################################################################################################
@@ -23,7 +23,7 @@ cp ./.zshrc ~
 mv ~/.zshrc ~/.zshrc.bak
 
 sudo sh -c "$(wget -O- https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- \
-    -t agnoster
+    -t agnoster -p zsh-autosuggestions -p zsh-syntax-highlighting 
 # remove newly created zshrc
 rm -f ~/.zshrc
 # restore saved zshrc
