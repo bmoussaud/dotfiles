@@ -82,10 +82,10 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 #plugins=(git dirhistory dircycle gitfast git-extras jsontools macos repo sudo urltools web-search dirpersist history-substring-search last-working-dir zsh-completions )
 
 #plugins=(git kube-ps1 kubectl history emoji encode64 copypath copyfile dirhistory jsontools gitfast  )
-#plugins=(git kube-ps1  kubectl history zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git kube-ps1  kubectl history)
 # install zsh-completion git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 #fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-#source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
