@@ -165,6 +165,7 @@ function stop-aks-cluster() {
 	az aks stop --resource-group ${CLUSTER_NAME} --name ${CLUSTER_NAME}
 }
 
+# https://stackoverflow.com/questions/16993082/why-doesnt-git-recognize-that-my-file-has-been-changed-therefore-git-add-not-w
 
 eval "$(task --completion zsh)"
 eval "$(kubectl completion zsh)"
