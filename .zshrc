@@ -172,6 +172,9 @@ eval "$(kubectl completion zsh)"
 DEFAULT_USER=$USER
 # remove username@hostname in prompt as advised at
 # https://github.com/ohmyzsh/ohmyzsh/issues/5581#issuecomment-256825141
+function gituntracked() {
+	git update-index --no-assume-unchanged $* 
+}
 prompt_context() {}
 
 
