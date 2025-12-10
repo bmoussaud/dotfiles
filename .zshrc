@@ -128,6 +128,8 @@ function kubectlgetall {
   done
 }
 
+#https://bsky.app/profile/emmanuelbernard.com/post/3m7mxkc6qvk2m
+setopt NO_BANG_HIST
 
 alias cat='batcat --style header --style snip --style changes --style header'
 alias ldk8sctx="source /Users/bmoussaud/Workspace/bmoussaud/tanzutips/context/load-k8s-config.sh"
