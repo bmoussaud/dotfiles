@@ -167,6 +167,9 @@ function stop-aks-cluster() {
 	az aks stop --resource-group ${CLUSTER_NAME} --name ${CLUSTER_NAME}
 }
 
+
+export MY_TENANT_ID="be38c437-5790-4e3a-bb56-4811371e35ea"
+
 # https://stackoverflow.com/questions/16993082/why-doesnt-git-recognize-that-my-file-has-been-changed-therefore-git-add-not-w
 
 eval "$(task --completion zsh)"
